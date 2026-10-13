@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Gamified-Learning-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Gamified-Learning-Platform?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Gamified-Learning-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Gamified-Learning-Platform?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Gamified-Learning-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Gamified-Learning-Platform?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Gamified-Learning-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Gamified-Learning-Platform/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -75,9 +75,9 @@ Below is a side-by-side analysis of leading commercial gamified learning platfor
 
 ## 🔓 Open-Source GitHub Projects
 
-Explore top open-source learning management systems, gamified engines, and interactive code playgrounds. **Sorted in descending order by GitHub Stars ⭐**.
+Explore top open-source learning management systems, gamified engines, and interactive code playgrounds. **Sorted in descending order by GitHub_Stars ⭐**.
 
-| 📦 Repository & Project | ⭐ GitHub Stars | ⚖️ License | 🛠️ Tech Stack | 🎯 Gamification & Interactive Features |
+| 📦 Repository & Project | ⭐ GitHub_Stars | ⚖️ License | 🛠️ Tech Stack | 🎯 Gamification & Interactive Features |
 | :--- | :--- | :--- | :--- | :--- |
 | **[freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)** 🌟 | [![Stars](https://img.shields.io/github/stars/freeCodeCamp/freeCodeCamp?style=social&color=white)](https://github.com/freeCodeCamp/freeCodeCamp/stargazers) | BSD-3-Clause | Node.js, TypeScript, React, Docker | Massive interactive learning platform featuring point systems, daily challenge streaks, interactive browser IDE test runners, project milestone reviews, and verifiable developer certifications. |
 | **[Habitica](https://github.com/HabitRPG/habitica)** 🧙‍♂️ | [![Stars](https://img.shields.io/github/stars/HabitRPG/habitica?style=social&color=white)](https://github.com/HabitRPG/habitica/stargazers) | GPL-3.0 | Node.js, Vue.js, MongoDB, Express | Turns education and habits into an RPG game. Complete study tasks and lessons to gain XP, collect gold, purchase gear, hatch battle pets, and defeat dungeon bosses with study party groups. |
@@ -89,7 +89,7 @@ Explore top open-source learning management systems, gamified engines, and inter
 | **[Oppia](https://github.com/oppia/oppia)** 🤝 | [![Stars](https://img.shields.io/github/stars/oppia/oppia?style=social&color=white)](https://github.com/oppia/oppia/stargazers) | Apache-2.0 | Python, Angular, Google Cloud Datastore | Interactive online tutoring system simulating one-on-one personalized learning. Provides branching scenario paths, personalized adaptive feedback, story dialogues, and learner skill matrix analytics. |
 | **[Jupyter Book](https://github.com/jupyter-book/jupyter-book)** 📖 | [![Stars](https://img.shields.io/github/stars/jupyter-book/jupyter-book?style=social&color=white)](https://github.com/jupyter-book/jupyter-book/stargazers) | BSD-3-Clause | Python, Sphinx, Markdown | Converts computational notebooks into interactive, publication-quality technical textbooks. Embeds executable code cells, interactive quiz widgets, toggleable exercise solutions, and progress trackers. |
 | **[Frappe LMS](https://github.com/frappe/lms)** ⚡ | [![Stars](https://img.shields.io/github/stars/frappe/lms?style=social&color=white)](https://github.com/frappe/lms/stargazers) | AGPL-3.0 | Python (Frappe), Vue.js, MariaDB | Modern, lightweight, 100% open-source LMS built on Frappe Framework. Offers chapter quizzes, course completion certificates, student discussion portals, assignment reviews, and progress tracking. |
-| **[Kolibri](https://github.com/learningequality/kolibri)** 📡 | [![Stars](https://img.shields.io/github/stars/learningequality/kolibri?style=social&color=white)](https://github.com/learningequality/kolibri/stargazers) | MIT | Python, Django, Vue.js, SQLite | Offline-first learning platform optimized for low-resource and zero-connectivity environments. Includes point-earning mechanics, mastery star badges, offline sync, and exercise progress graphs. |
+| **[Kolibri](https://github.com/learningequality/kolibri)** 📡 | [![Stars](https://img.shields.io/github/stars/learningequality/kolibri?style=social&color=white)](https://github.com/learningequality/kolibri/stargazers) | MIT | Python, Django, Vue.js, SQLite | Offline-first learning platform optimized for low-resource and zero-connectivity environments. Includes point-earning mechanics, mastery Stars_Badges, offline sync, and exercise progress graphs. |
 | **[Chamilo LMS](https://github.com/chamilo/chamilo-lms)** 🏫 | [![Stars](https://img.shields.io/github/stars/chamilo/chamilo-lms?style=social&color=white)](https://github.com/chamilo/chamilo-lms/stargazers) | GPL-3.0 | PHP, Symfony, MySQL | Open-source e-learning platform supporting skills management, digital skill badges, serious gaming integrations, scenario learning paths, and automated certificate generation. |
 | **[Gamified Education](https://github.com/wallysalami/gamified-education)** 🎒 | [![Stars](https://img.shields.io/github/stars/wallysalami/gamified-education?style=social&color=white)](https://github.com/wallysalami/gamified-education/stargazers) | MIT | Python (Django), HTML5, SQLite | Purpose-built gamified classroom portal supporting student XP earning, automatic achievement unlock rules, customizable scoreboard rankings, assignment submissions, and badge awards. |
 | **[OpenGamifyLMS](https://github.com/puskunalis/opengamifylms)** 🏢 | [![Stars](https://img.shields.io/github/stars/puskunalis/opengamifylms?style=social&color=white)](https://github.com/puskunalis/opengamifylms/stargazers) | MIT | Go, React, PostgreSQL, MinIO, Helm | Cloud-native microservices LMS tailored specifically to gamify corporate employee training. Features company leaderboards, challenge quests, quiz assessments, and Kubernetes Helm deployment. |
@@ -146,7 +146,7 @@ Contributions are warmly welcomed! Help keep this directory accurate, comprehens
 3. **Add or edit entries in `README.md`**:
    - Maintain the existing tabular schema.
    - For SaaS products: provide verified starting prices, precise free tier/trial limits, and company scale metrics.
-   - For open-source repos: include the Shields.io social star badge linking to the repo's `/stargazers` page.
+   - For open-source repos: include the Shields.io social Stars_Badge linking to the repo's `/stargazers` page.
 4. **Commit your modifications**: `git commit -m "feat: add [Platform Name] to ecosystem"`.
 5. **Open a Pull Request** with a concise summary of why the tool qualifies.
 
