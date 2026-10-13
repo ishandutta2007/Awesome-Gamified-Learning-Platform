@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="accent-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="accent-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- CSS Animations -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1.5deg); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(10px) rotate(-1.5deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes streakFlow {
+        0% { stroke-dashoffset: 1000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes orbMove {
+        0%, 100% { transform: translate(0, 0); }
+        33% { transform: translate(30px, -20px); }
+        66% { transform: translate(-25px, 15px); }
+      }
+
+      .animated-float-1 { animation: floatSlow 7s ease-in-out infinite; }
+      .animated-float-2 { animation: floatReverse 8s ease-in-out infinite; }
+      .animated-float-3 { animation: floatSlow 6s ease-in-out infinite 1s; }
+      .animated-pulse-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 250px 180px; }
+      .animated-pulse-2 { animation: pulseGlow 7s ease-in-out infinite 2s; transform-origin: 950px 220px; }
+      .animated-flow { stroke-dasharray: 20 15; animation: streakFlow 35s linear infinite; }
+      .animated-orb { animation: orbMove 12s ease-in-out infinite; }
+
+      .card-border { stroke: rgba(148, 163, 184, 0.18); stroke-width: 1.5; }
+      .font-main { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Subtle Geometric Grid -->
+  <g opacity="0.08" stroke="#cbd5e1" stroke-width="1">
+    <line x1="0" y1="50" x2="1200" y2="50" />
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="250" x2="1200" y2="250" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+
+    <line x1="100" y1="0" x2="100" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="400" y1="0" x2="400" y2="400" />
+    <line x1="500" y1="0" x2="500" y2="400" />
+    <line x1="600" y1="0" x2="600" y2="400" />
+    <line x1="700" y1="0" x2="700" y2="400" />
+    <line x1="800" y1="0" x2="800" y2="400" />
+    <line x1="900" y1="0" x2="900" y2="400" />
+    <line x1="1000" y1="0" x2="1000" y2="400" />
+    <line x1="1100" y1="0" x2="1100" y2="400" />
+  </g>
+
+  <!-- Ambient Glowing Blobs (Background) -->
+  <circle cx="220" cy="140" r="180" fill="url(#glow-grad-1)" class="animated-pulse-1" />
+  <circle cx="980" cy="240" r="210" fill="url(#glow-grad-2)" class="animated-pulse-2" />
+  <circle cx="600" cy="360" r="160" fill="url(#glow-grad-3)" opacity="0.3" class="animated-orb" />
+
+  <!-- Animated Glowing Circuit / Flow Lines (Background) -->
+  <g fill="none" opacity="0.25">
+    <path d="M-50,280 C200,200 400,320 650,260 C900,200 1050,300 1250,220" stroke="#38bdf8" stroke-width="2.5" class="animated-flow" />
+    <path d="M-50,120 C250,180 500,80 750,160 C1000,240 1150,140 1250,180" stroke="#a855f7" stroke-width="2" class="animated-flow" style="animation-direction: reverse; animation-duration: 28s;" />
+  </g>
+
+  <!-- Animated Gamification Cards & Widgets (Midground - Left & Right Sides) -->
+  <!-- Left Side: XP Streak Card -->
+  <g class="animated-float-1" transform="translate(60, 80)">
+    <rect width="180" height="74" rx="12" fill="url(#card-grad)" class="card-border" filter="url(#shadow-card)" />
+    <circle cx="34" cy="37" r="18" fill="url(#accent-amber)" opacity="0.2" />
+    <text x="34" y="44" font-size="20" text-anchor="middle">🔥</text>
+    <text x="64" y="32" class="font-main" font-size="12" font-weight="700" fill="#fde68a" letter-spacing="0.5">365-DAY STREAK</text>
+    <text x="64" y="52" class="font-main" font-size="15" font-weight="800" fill="#ffffff">+15,420 XP</text>
+  </g>
+
+  <!-- Left Side: Badge Achieved -->
+  <g class="animated-float-2" transform="translate(40, 240)">
+    <rect width="190" height="70" rx="12" fill="url(#card-grad)" class="card-border" filter="url(#shadow-card)" />
+    <circle cx="32" cy="35" r="18" fill="url(#accent-purple)" opacity="0.2" />
+    <text x="32" y="42" font-size="20" text-anchor="middle">🎖️</text>
+    <text x="62" y="30" class="font-main" font-size="11" font-weight="700" fill="#e9d5ff" letter-spacing="0.5">BADGE UNLOCKED</text>
+    <text x="62" y="50" class="font-main" font-size="14" font-weight="800" fill="#ffffff">Grandmaster Tier</text>
+  </g>
+
+  <!-- Right Side: Leaderboard Card -->
+  <g class="animated-float-3" transform="translate(950, 75)">
+    <rect width="190" height="74" rx="12" fill="url(#card-grad)" class="card-border" filter="url(#shadow-card)" />
+    <circle cx="34" cy="37" r="18" fill="url(#accent-cyan)" opacity="0.2" />
+    <text x="34" y="44" font-size="20" text-anchor="middle">🏆</text>
+    <text x="64" y="32" class="font-main" font-size="11" font-weight="700" fill="#a5f3fc" letter-spacing="0.5">LEADERBOARD</text>
+    <text x="64" y="52" class="font-main" font-size="14" font-weight="800" fill="#ffffff">Rank #1 • Diamond</text>
+  </g>
+
+  <!-- Right Side: Skill IQ Mastery Card -->
+  <g class="animated-float-1" transform="translate(965, 235)">
+    <rect width="180" height="70" rx="12" fill="url(#card-grad)" class="card-border" filter="url(#shadow-card)" />
+    <circle cx="32" cy="35" r="18" fill="url(#accent-emerald)" opacity="0.2" />
+    <text x="32" y="42" font-size="20" text-anchor="middle">⚡</text>
+    <text x="62" y="30" class="font-main" font-size="11" font-weight="700" fill="#a7f3d0" letter-spacing="0.5">SKILL MASTERY</text>
+    <text x="62" y="50" class="font-main" font-size="14" font-weight="800" fill="#ffffff">99.8th Percentile</text>
+  </g>
+
+  <!-- FOREGROUND LAYER: STRICTLY IN FOREGROUND & HIGH CONTRAST -->
+  <g id="foreground-content" class="font-main">
+    <!-- Category Pill Tag -->
+    <g transform="translate(425, 48)">
+      <rect width="350" height="32" rx="16" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" opacity="0.95" />
+      <circle cx="20" cy="16" r="6" fill="#22c55e" />
+      <text x="185" y="21" class="font-main" font-size="12" font-weight="800" fill="#c7d2fe" text-anchor="middle" letter-spacing="1.2">
+        🎮 GAMIFIED LEARNING ECOSYSTEM • 2026
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="160" text-anchor="middle" font-size="44" font-weight="900" fill="url(#title-grad)" letter-spacing="-0.5" filter="url(#shadow-glow)">
+      Awesome Gamified Learning Platform
+    </text>
+
+    <!-- Subtitle (Clear, readable, high foreground contrast) -->
+    <text x="600" y="205" text-anchor="middle" font-size="18" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">
+      Curated Ecosystem of Enterprise SaaS Solutions &amp; Open-Source Gamification Frameworks
+    </text>
+
+    <!-- Key Gamification Pillars (Foreground Pills) -->
+    <g transform="translate(230, 260)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="65" y="22" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">⚡ XP &amp; Streaks</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(145, 0)">
+        <rect width="140" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="70" y="22" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">🏆 Leaderboards</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(300, 0)">
+        <rect width="135" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="67.5" y="22" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">🎖️ Digital Badges</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(450, 0)">
+        <rect width="145" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="72.5" y="22" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">🎯 Quests &amp; Paths</text>
+      </g>
+      <!-- Pill 5 -->
+      <g transform="translate(610, 0)">
+        <rect width="130" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="65" y="22" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">🚀 Open LMS</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metrics / Status bar -->
+    <g transform="translate(360, 340)">
+      <text x="240" y="0" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="0.5">
+        🔥 10+ Enterprise Platforms • 🌟 14+ Open-Source Engines • 💡 Community-Driven Research
+      </text>
+    </g>
+  </g>
+</svg>
